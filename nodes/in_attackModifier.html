@@ -1,0 +1,39 @@
+<script type="text/javascript">
+    RED.nodes.registerType('attack-modifier', {
+        category: 'TW2',
+        color: '#E9967A',
+        defaults: {
+            grandmaster: {value: false},
+            masterOfLoot: {value: false},
+            deceiver: {value: false},
+            ranger: {value: false}
+        },
+        inputs: 1,
+        outputs: 1,
+        icon: 'icons/left.png',
+        label: function () {
+            return 'attack modifier'
+        }
+    });
+</script>
+<script type="text/x-red" data-template-name="attack-modifier">
+    <div class="form-row">
+        <label for="node-input-grandmaster"><i class="icon-tag"></i> Grandmaster</label>
+        <input type="checkbox" id="node-input-grandmaster">
+    </div>
+    <div class="form-row">
+        <label for="node-input-masterOfLoot"><i class="icon-tag"></i> Master of Loot</label>
+        <input type="checkbox" id="node-input-masterOfLoot">
+    </div>
+    <div class="form-row">
+        <label for="node-input-deceiver"><i class="icon-tag"></i> Deceiver</label>
+        <input type="checkbox" id="node-input-deceiver">
+    </div>
+    <div class="form-row">
+        <label for="node-input-ranger"><i class="icon-tag"></i> Ranger</label>
+        <input type="checkbox" id="node-input-ranger">
+    </div>
+  </script>
+<script type="text/x-red" data-help-name="apn">
+  Node help text here
+  </script>

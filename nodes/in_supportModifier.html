@@ -1,0 +1,29 @@
+<script type="text/javascript">
+    RED.nodes.registerType('support-modifier', {
+        category: 'TW2',
+        color: '#A6BBCF',
+        defaults: {
+            tactician: {value: false},
+            onTime: {value: false}
+        },
+        inputs: 1,
+        outputs: 1,
+        icon: 'icons/left.png',
+        label: function () {
+            return 'support modifier';
+        }
+    });
+</script>
+<script type="text/x-red" data-template-name="support-modifier">
+    <div class="form-row">
+        <label for="node-input-tactician"><i class="icon-tag"></i> Tactician</label>
+        <input type="checkbox" id="node-input-tactician">
+    </div>
+    <div class="form-row">
+        <label for="node-input-onTime"><i class="icon-tag"></i> Do not delay</label>
+        <input type="checkbox" id="node-input-onTime">
+    </div>
+  </script>
+<script type="text/x-red" data-help-name="apn">
+  Node help text here
+  </script>

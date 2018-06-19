@@ -1,0 +1,24 @@
+<script type="text/javascript">
+  RED.nodes.registerType('landing-time', {
+    category: 'TW2',
+    color: '#3FADB5',
+    defaults: {
+      landingTime: { value: "" }
+    },
+    inputs: 0,
+    outputs: 1,
+    icon: 'inject.png',
+    label: function() {
+      return `(UTC) ${this.landingTime}` || 'UTC Landing Time'
+    }
+  });
+</script>
+<script type="text/x-red" data-template-name="landing-time">
+    <div class="form-row">
+        <label for="node-input-landingTime"><i class="icon-tag"></i> Landing time</label>
+        <input type="datetime-local" id="node-input-landingTime" step="1">
+    </div>
+</script>
+<script type="text/x-red" data-help-name="apn">
+Node help text here
+</script>

@@ -1,0 +1,43 @@
+<script type="text/javascript">
+    RED.nodes.registerType('unit', {
+      category: 'TW2',
+      color: '#F3B567',
+      defaults: {
+        slowestUnit: {value: ''},
+        worldSpeed: {value: 1}
+      },
+      inputs: 1,
+      outputs: 1,
+      icon: 'icons/unit.png',
+      label: function() {
+        return this.slowestUnit || 'unit'
+      }
+    });
+  </script>
+  <script type="text/x-red" data-template-name="unit">
+    <div class="form-row">
+      <label for="node-input-slowestUnit"><i class="fa fa-empire"></i> Slowest unit</label>
+      <select id="node-input-slowestUnit">
+          <option value="spear">Spear</option>
+          <option value="sword">Sword</option>
+          <option value="axe">Axe</option>
+          <option value="archer">Archer</option>
+          <option value="light_cavalry">Light cavalry</option>
+          <option value="mounted_archer">Mounted archer</option>
+          <option value="heavy_cavalry">Heavy cavalry</option>
+          <option value="ram">Ram</option>
+          <option value="catapult">Catapult</option>
+          <option value="berserker">Berserker</option>
+          <option value="trebuchet">Trebuchet</option>
+          <option value="noble">Nobleman</option>
+          <option value="paladin">Paladin</option>
+      </select>
+  </div>
+      <div class="form-row">
+          <label for="node-input-worldSpeed"><i class="icon-tag"></i> World speed</label>
+          <input type="text" id="node-input-worldSpeed">
+      </div>
+  </script>
+  <script type="text/x-red" data-help-name="apn">
+  Node help text here
+  </script>

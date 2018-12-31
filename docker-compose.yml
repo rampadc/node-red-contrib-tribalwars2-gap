@@ -1,0 +1,11 @@
+version: "3"
+services:
+  tw2-gap:
+    build: .
+    image: rampadc/tw2-gap:latest
+    ports:
+      - "1880:1880"
+    environment:
+      - RED_USERNAME=admin
+      - RED_HASHPASS=$$2a$$08$$DqsE7WAqZWV8XTZB3WVjauDZnic8k2VqFjqDTTO/CrLhuDH4izHk2
+

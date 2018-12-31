@@ -15,9 +15,20 @@ To run locally,
 
 ## Docker 
 
-To run on Docker, run `docker-compose up`.
+To run with latest NodeJS image, run
 
-Username and password is located in `docker-compose.yml` with `admin`/`passw0rd` defaults. Password must be hashed accordingly to [Node-red basic authentication](https://nodered.org/docs/security#usernamepassword-based-authentication).
+```$xslt
+docker-compose -f docker/full/docker-compose.yml up 
+```
+
+To use the Alpine base image, run
+
+```$xslt
+docker-compose -f docker/slim/docker-compose.yml up 
+```
+
+The default username and password is set to `admin`/`password`. You can change this in the corresponding Compose files.
+
 
 ## Demo screenshots
 

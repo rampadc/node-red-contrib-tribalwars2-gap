@@ -1,9 +1,8 @@
-FROM node:latest
+FROM node:alpine
 
-RUN mkdir -p /tw2-gap
 COPY . /tw2-gap/
 
-RUN cd tw2-gap && sh /tw2-gap/setup.sh
+RUN apk add g++ make python git openssh-keygen && cd tw2-gap && sh /tw2-gap/setup.sh && apk del g++ make python
 
 # Using project feature, do not need volume since user will be saving flows in respective repos
 EXPOSE 1880

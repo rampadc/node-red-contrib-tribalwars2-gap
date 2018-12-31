@@ -1,7 +1,9 @@
 version: "3"
 services:
   tw2-gap:
-    build: .
+    build:
+      context: ../..
+      dockerfile: docker/full/Dockerfile
     image: rampadc/tw2-gap:latest
     ports:
       - "1880:1880"

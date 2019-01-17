@@ -1,0 +1,8 @@
+stages:
+- name: Build
+  steps:
+  - publishImageConfig:
+      dockerfilePath: ./docker/slim/Dockerfile
+      buildContext: .
+      tag: rampadc/tw2-gap:latest
+timeout: 60

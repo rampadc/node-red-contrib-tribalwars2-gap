@@ -5,4 +5,6 @@ stages:
       dockerfilePath: ./docker/slim/Dockerfile
       buildContext: .
       tag: rampadc/tw2-gap:latest
+      pushRemote: true
+      registry: index.docker.io
 timeout: 60

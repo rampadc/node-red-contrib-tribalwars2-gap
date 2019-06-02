@@ -14,8 +14,22 @@
     "url": "git+https://github.com/rampadc/node-red-contrib-tw2-gap.git"
   },
   "keywords": [
-    "tw2"
+    "tw2",
+    "node-red"
   ],
+  "node-red": {
+    "nodes": {
+      "fn_plan": "fn_plan.js",
+      "in_attackModifier": "in_attackModifier.js",
+      "in_commandType": "in_commandType.js",
+      "in_landingTime":"in_landingTime.js",
+      "in_supportModifier": "in_supportModifier.js",
+      "in_unit": "in_unit.js",
+      "in_village": "in_village.js",
+      "out_launchDateLocal": "out_launchDateLocal.js",
+      "out_launchDateUTC": "out_launchDateUTC.js"
+    }
+  },
   "author": "Cong",
   "license": "Apache-2.0",
   "bugs": {

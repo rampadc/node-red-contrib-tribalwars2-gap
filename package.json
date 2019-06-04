@@ -22,7 +22,7 @@
       "fn_plan": "fn_plan.js",
       "in_attackModifier": "in_attackModifier.js",
       "in_commandType": "in_commandType.js",
-      "in_landingTime":"in_landingTime.js",
+      "in_landingTime": "in_landingTime.js",
       "in_supportModifier": "in_supportModifier.js",
       "in_unit": "in_unit.js",
       "in_village": "in_village.js",
@@ -34,6 +34,10 @@
   "license": "Apache-2.0",
   "bugs": {
     "url": "https://github.com/rampadc/node-red-contrib-tw2-gap/issues"
+  },
+  "dependencies": {
+    "moment": "2.24.0",
+    "moment-timezone": "0.5.25"
   },
   "homepage": "https://github.com/rampadc/node-red-contrib-tw2-gap#readme"
 }

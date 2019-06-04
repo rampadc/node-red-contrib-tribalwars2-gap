@@ -28,7 +28,7 @@ const unitNames = {
     trebuchet: 'trebuchet',
     noble: 'snob',
     paladin: 'knight'
-}
+};
 
 function calculateDistance(source, target) {
     let dx = source.x - target.x;

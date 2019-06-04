@@ -1,10 +1,10 @@
-const getLaunchDate = require('./getLaunchDate');
-
 module.exports = function (RED) {
+    const getLaunchDate = require('./getLaunchDate');
+
     function PlanNode(config) {
         RED.nodes.createNode(this, config);
 
-        this.on('input', (msg) => {          
+        this.on('input', (msg) => {
             // couple of status notices
             if (msg.payload.hasOwnProperty('commandType')) {
                 if (msg.payload['commandType'] === 'attack') {
@@ -34,7 +34,7 @@ module.exports = function (RED) {
                 msg.payload.isClearingNuke
             );
             msg.payload['launchDate'] = launchDate;
-    
+
             this.send(msg);
         });
     }

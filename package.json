@@ -36,7 +36,7 @@
     "url": "https://github.com/rampadc/node-red-contrib-tw2-gap/issues"
   },
   "dependencies": {
-    "moment": "2.24.0",
+    "moment": "2.29.2",
     "moment-timezone": "0.5.25"
   },
   "homepage": "https://github.com/rampadc/node-red-contrib-tw2-gap#readme"
